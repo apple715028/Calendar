@@ -403,7 +403,6 @@ class Calendar extends React.Component {
                             {
                                this.titletime.map((item,i)=>{
                                     on = item === titledate ? 'on':'';
-                                    // console.log(item === titledate,"now",titledate);
                                     return(
                                         <li key={i} className={on} onClick={this.now} >
                                             <span> {item.slice(0,4)}年{item.slice(5,7)}月 </span>
@@ -442,7 +441,6 @@ class Calendar extends React.Component {
                                         price2 =datakey.price,
                                         state2 =datakey.state;
 
-                                    // console.log(item[totalVacnacy2]);
                                     let disn = JSON.stringify(item) === "{}" ?'disn':"";
                                     let go = item[guaranteed2] === true ? 'go':'disn';
                                     let buy =item[availableVancancy2] === " "? 'disn':'';
